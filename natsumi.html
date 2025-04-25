@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Personagens</title>
+    
+    <!-- Fontes do Google para tema medieval -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
+    
+    <!-- Ícones para redes sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Ícones na Aba -->
+    <link rel="shortcut icon" href="assets/images/favico.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Botão de alternância de tema -->
+    <button id="themeToggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+
+
+
+    <!-- Cabeçalho -->
+    <header class="page-section">
+      <!-- Menu -->
+        <!-- <nav class="navbar">
+            <div class="logo">Meu Site</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#apresentacao" class="active">Apresentação</a></li>
+                <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li><a href="#lacos">Laços</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+            <div class="menu-container">
+              <button class="menu-toggle" id="toggleBtn">☰</button>
+              <div class="menu-links" id="menuLinks">
+                <a href="index.html">Home</a>
+                <a href="#apresentacao">Apresentação</a>
+                <a href="#linha-do-tempo">Linha do Tempo</a>
+                <a href="#lacos">Laços</a>
+              </div>
+            </div>
+          </nav>
+
+        <div class="header-content">
+            <img src="assets/images/avatar-Natsumi.png" alt="Avatar Natsumi" class="avatar" id="apresentacao" class="section active">
+            <h1>Natsumi</h1>
+            <p class="subtitle">Desconhecida · Duelista</p>
+            <p class="bio">
+                Vi o mundo ruir nos olhos dela, no instante em que a luz se apagou… 
+                e antes que eu pudesse gritar, meus aliados calaram minha dor com a covardia 
+                da sobrevivência
+            </p>
+        </div>
+    </header>
+
+    <!-- Seção principal do diário -->
+    <main>
+        <!-- Entradas do diário -->
+        <section class="page-section" id="entries">
+            <h2 id="linha-do-tempo" class="section">Linha do Tempo</h2>
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-date">Mundo Antigo</span>
+                    <h3>Renascida Sem Nome</h3>
+                </div>
+                <p class="entry-content">
+                    Não sei meu nome. <br>
+                    Não sei de onde vim.<br>
+                    Não sei quem eu era… ou quem sou agora.<br><br>
+                    Acordei em um lugar estranho, envolta em silêncio e medo. Meu corpo estava fraco, 
+                    meu espírito… manchado por algo escuro que eu não consigo entender. 
+                    Então eles apareceram — um grupo de viajantes. Não me conhecem. 
+                    Não sabem nada sobre mim. E mesmo assim… me ajudaram. <br><br>
+                    Fizeram um ritual, disseram que havia algo errado em mim, 
+                    algo que precisava ser purificado. Senti dor. Depois, alívio. 
+                    Mas o vazio continua. As memórias não voltaram. Só há esse buraco dentro de mim, 
+                    e uma sensação constante de que algo — ou alguém — está me observando das sombras do 
+                    meu passado. <br><br>
+                    Eles me acolheram. Me tratam com cuidado. Mas posso ver nos olhos deles a dúvida... e, às vezes, o medo.
+                    E eu? Eu também tenho medo.
+                    Medo de lembrar.
+                    Medo do que posso descobrir.
+                    Medo… de quem eu possa ser.
+                </p>
+            </article>
+            <!-- Mais entradas aqui -->
+            <article class="entry">
+                <div class="entry-header">
+                    <span class="entry-date">Mundo Antigo</span>
+                    <h3>No Silêncio do Último Olhar</h3>
+                </div>
+                <p class="entry-content">
+                    Ela chegou em nossas vidas como uma brisa calma antes da tempestade. Ahri. 
+                    Não esteve conosco por tanto tempo, mas foi o suficiente… para mudar tudo. 
+                    Mentora. Amiga. Talvez algo mais que meu coração ainda não teve tempo de entender. 
+                    E agora, nunca vai ter. <br><br>
+                    Hoje, ela morreu.<br>
+                    Na minha frente.<br><br>
+                    Para nos salvar.<br>
+                    Para me salvar.<br><br>
+                    Nós éramos fracos. Ela foi forte demais por todos nós. 
+                    Quando o perigo veio, ela enfrentou sozinha o que deveríamos ter enfrentado juntos. 
+                    Eu tentei alcançá-la. Tentei correr até ela. 
+                    Mas meus próprios companheiros me seguraram — braços e mãos me impedindo de lutar, 
+                    de falhar junto com ela. Eu vi. Eu vi o golpe final atravessar seu corpo… 
+                    e no mesmo instante, a escuridão. Alguém me apagou. Me apagaram. 
+                    Para que eu fugisse. <br><br>
+                    Mas fugi de quê? De quem?<br>
+                    Hoje eu não sou nada além de uma covarde viva… enquanto ela, que tanto deu, 
+                    virou lembrança.<br><br>
+                    E a pior parte?<br>
+                    Eu nunca disse o que sentia.<br>
+                    E agora, nem mesmo a memória dela consegue me ouvir.
+                </p>
+            </article>
+        </section>
+
+        <!-- Seção de notas -->
+        <section class="page-section" id="notes">
+            <h2 id="lacos" class="section">Laços</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <img src="assets/images/avatar-Hagak.png" alt="Avatar Hagak" class="avatar">
+                    <h4>Hagak</h4>
+                    <p>
+                        Ele e eu nunca fomos próximos. <br>
+                        Objetivos diferentes. Silêncios longos.<br>
+                        Mas quando eu estive longe…<br>
+                        ele ficou. Protegeu quem eu amo.<br><br>
+                        Ele não tinha que fazer isso.<br>
+                        Mas fez.<br><br>                   
+                        Talvez ele nunca saiba o quanto isso significou pra mim.<br>
+                        Talvez eu nunca diga.<br>
+                        Mas dentro de mim… existe uma gratidão que nunca vai se apagar.
+                    </p>
+                </div>
+                <!-- Mais notas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="page-section">
+        <div class="social-links">
+            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank"><i class="fab fa-github"></i></a>
+            <img src="assets/images/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo">
+        </div>
+        <p class="copyright"> Criado por Ademis</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
