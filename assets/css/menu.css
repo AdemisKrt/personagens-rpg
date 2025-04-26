@@ -36,7 +36,7 @@
 
     .menu-toggle {
       display: none;
-      font-size: 1.5rem;
+      font-size: 1rem;
       background: none;
       border: none;
       color: var(--current-accent);
@@ -51,7 +51,7 @@
         background-color: var(--current-paper);
         position: absolute;
         top: 100%;
-        right: 0;
+        left: 2.5rem;
         width: 200px;
         border-left: 2px solid var(--current-accent);
         border-bottom: 2px solid var(--current-accent);

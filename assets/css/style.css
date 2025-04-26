@@ -47,6 +47,9 @@ body.dark-theme {
   border-radius: 5px;
 }
 
+.page-section h2{
+  text-align: center;
+}
 /* Cabeçalho */
 .header-content {
   text-align: center;
@@ -54,6 +57,15 @@ body.dark-theme {
 
 .avatar {
   width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--current-accent);
+  margin: 1rem;
+}
+
+.capa-conto {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 3px solid var(--current-accent);
   margin: 1rem;
