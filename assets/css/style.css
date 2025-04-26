@@ -55,12 +55,15 @@ body.dark-theme {
   text-align: center;
 }
 
-.avatar {
+img.avatar {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--current-accent);
   margin: 1rem;
 }
+
 
 .capa-conto {
   height: 200px;
