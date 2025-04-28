@@ -1,0 +1,120 @@
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #fff5e6;
+    color: #3d2c1d;
+    transition: background-color 0.3s, color 0.3s;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha tudo em coluna */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #d6c7a8;
+}
+
+main {
+    flex: 1; /* O main ocupa todo espaço disponível */
+    padding: 20px;
+}
+
+button#toggle-theme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #3d2c1d;
+    color: #d6c7a8;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+button#toggle-theme:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+#toggle-theme span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    .selecao-personagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personagem {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .personagem img {
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    button#toggle-theme {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
+    .footer-content {
+        gap: 5px;
+    }
+
+    .footer-content p, .footer-content a {
+        font-size: 14px;
+    }
+
+    .logo-footer {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividade extrema (celulares muito pequenos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .nome-personagem {
+        font-size: 18px;
+    }
+
+    button#toggle-theme {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

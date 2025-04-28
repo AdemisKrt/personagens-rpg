@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renascida Sem Nome</title>
+
+    <!-- Estilos globais e específicos -->
+    <link rel="shortcut icon" href="../../../assets/img/others/favico.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../assets/css/global/estilo-geral.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/rodape-diario.css">
+    <link rel="stylesheet" href="../../../assets/css/global/alterar-tema.css">
+    <link rel="stylesheet" href="../../../assets/css/personagens/menu-dropdown.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/pagina-diario.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/botoes.css">
+</head>
+
+<body>
+    <!-- Botão de alternar tema -->
+    <button id="toggle-theme">
+        <span id="theme-icon">🌞</span>
+    </button>
+
+    <!-- Menu Dropdown -->
+    <nav class="navbar">
+        <ul class="menu">
+            <!-- Link Home -->
+            <li>
+                <a href="../../../index.html">
+                    <img src="../../../assets/img/menu/home-ico.png" alt="Ícone Home" class="icon"> Home
+                </a>
+            </li>
+    
+            <!-- Dropdown de Personagens -->
+            <li class="dropdown" id="menu-personagens">
+                <a href="javascript:void(0);">
+                    <img src="../../../assets/img/menu/personagens-ico.png" alt="Ícone Personagens" class="icon"> Personagens
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../natsumi.html">
+                            <img src="../../../assets/img/menu/natsumi-ico.png" alt="Ícone Natsumi" class="icon"> Natsumi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../../assets/img/menu/helldrin-ico.png" alt="Ícone Helldrin" class="icon"> Helldrin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../../assets/img/menu/myst-ico.png" alt="Ícone Mystogan" class="icon"> Mystogan
+                        </a>
+                    </li>
+                    <!-- Mais personagens facilmente adicionáveis aqui -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Seção principal do diário -->
+    <main>
+        <!-- Entradas do diário -->
+        <section class="page-section" id="entries">
+            <h2 id="titulo" class="section">Renascida Sem Nome</h2>
+            <article class="entry">
+                <p class="entry-content">
+                    Não sei meu nome. <br>
+                    Não sei de onde vim.<br>
+                    Não sei quem eu era… ou quem sou agora.<br><br>
+                    Acordei em um lugar estranho, envolta em silêncio e medo. Meu corpo estava fraco, 
+                    meu espírito… manchado por algo escuro que eu não consigo entender. 
+                    Então eles apareceram — um grupo de viajantes. Não me conhecem. 
+                    Não sabem nada sobre mim. E mesmo assim… me ajudaram. <br><br>
+                    Fizeram um ritual, disseram que havia algo errado em mim, 
+                    algo que precisava ser purificado. Senti dor. Depois, alívio. 
+                    Mas o vazio continua. As memórias não voltaram. Só há esse buraco dentro de mim, 
+                    e uma sensação constante de que algo — ou alguém — está me observando das sombras do 
+                    meu passado. <br><br>
+                    Eles me acolheram. Me tratam com cuidado. Mas posso ver nos olhos deles a dúvida... e, às vezes, o medo.
+                    E eu? Eu também tenho medo.
+                    Medo de lembrar.
+                    Medo do que posso descobrir.
+                    Medo… de quem eu possa ser.
+                </p>
+            </article>
+            <!-- Mais entradas aqui -->
+        </section>
+
+        <!-- Citação de Personagens -->
+        <section class="page-section" id="notes">
+            <h2 id="personagens-citados" class="section">Personagens Citados</h2>
+            <div class="notes-grid">
+                <div class="note-card">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-taciane.png" alt="Avatar Taci" class="avatar">
+                    <h4>Taciane</h4>
+                    <p>
+                        Taciane fala comigo como se eu fosse... normal. <br>
+                        Como se a escuridão que sinto colada à minha pele não fosse importante. <br>
+                        Mas é, não é?
+                        Às vezes, tenho medo que ela veja demais. <br>
+                        Às vezes, tenho medo que ela veja de menos.
+                    </p>
+                </div>
+                <!-- Mais notas aqui -->
+                <div class="note-card">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-sapinho.png" alt="Avatar Marfim" class="avatar">
+                    <h4>Marfim</h4>
+                    <p>
+                        Queria confiar nele. <br>
+                        Queria acreditar que quem me salvou também se importa.
+                        Mas ele olha para mim como quem vê um livro antigo...
+                        Frágil. Interessante.
+                        Descartável.
+                    </p>
+                </div>
+                <!-- Mais notas aqui -->
+                <div class="note-card">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-kishi.png" alt="Avatar Kishi" class="avatar">
+                    <h4>Kishimoshi</h4>
+                    <p>
+                        Kishimoshi não me trata como um fardo. <br>
+                        Não me trata como uma esperança.
+                        Ele me trata como sou: uma dúvida viva. <br>
+                        E isso dói.
+                        Mas, de alguma maneira... também me mantém de pé.
+                    </p>
+                </div>
+                <!-- Mais notas aqui -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- Botões de navegação laterais -->
+    <div class="botoes-navegacao">
+        <!-- Botão para a página anterior -->
+        <a href="#" class="botao-nav esquerda">
+            <img src="../../../assets/img/global/botoes/seta-esquerda.png" alt="Voltar">
+        </a>
+         <!-- Botão para a próxima página -->
+        <a href="2-no-silencio-do-ultimo-olhar.html" class="botao-nav direita">
+            <img src="../../../assets/img/global/botoes/seta-direita.png" alt="Avançar">
+        </a>
+    </div>
+   
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <img src="../../../assets/img/others/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo-footer">
+            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank">Criado por AdemisKrt</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../../assets/js/global/alterar-tema.js"></script>
+    <script src="../../../assets/js/personagens/menu-dropdown.js"></script>
+</body>
+</html>

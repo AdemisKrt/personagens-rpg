@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Diário</title>
+
+    <link rel="shortcut icon" href="../../assets/img/others/favico.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../../assets/css/global/estilo-geral.css">
+    <link rel="stylesheet" href="../../assets/css/global/alterar-tema.css">
+    <link rel="stylesheet" href="../../assets/css/personagens/menu-dropdown.css">
+    <link rel="stylesheet" href="../../assets/css/personagens/selecao-de-contos.css">
+    <link rel="stylesheet" href="../../assets/css/global/rodape.css">
+</head>
+<body class="light-mode">
+
+    <!-- Botão de alternar tema -->
+    <button id="toggle-theme">
+        <span id="theme-icon">🌞</span>
+    </button>
+
+    <!-- Menu Dropdown -->
+    <nav class="navbar">
+        <ul class="menu">
+            <!-- Link Home -->
+            <li>
+                <a href="../../index.html">
+                    <img src="../../assets/img/menu/home-ico.png" alt="Ícone Home" class="icon"> Home
+                </a>
+            </li>
+    
+            <!-- Dropdown de Personagens -->
+            <li class="dropdown" id="menu-personagens">
+                <a href="javascript:void(0);">
+                    <img src="../../assets/img/menu/personagens-ico.png" alt="Ícone Personagens" class="icon"> Personagens
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/menu/natsumi-ico.png" alt="Ícone Natsumi" class="icon"> Natsumi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/menu/helldrin-ico.png" alt="Ícone Helldrin" class="icon"> Helldrin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/img/menu/myst-ico.png" alt="Ícone Mystogan" class="icon"> Mystogan
+                        </a>
+                    </li>
+                    <!-- Mais personagens facilmente adicionáveis aqui -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Seleção de Contos -->
+    <main>
+        <section class="selecao-contos">
+            <div class="conto-card">
+                <a href="contos/1-renascida-sem-nome.html">
+                    <img src="../../assets/img/contos/contos-natsumi/capas-dos-contos/renascida-sem-nome.png" alt="Capa do Capítulo - Renascida Sem Nome">
+                    <span class="nome-conto">Renascida Sem Nome</span>
+                </a>
+            </div>
+
+            <div class="conto-card">
+                <a href="2-contos/no-silencio-do-ultimo-olhar.html">
+                    <img src="../../assets/img/contos/contos-natsumi/capas-dos-contos/no-silencio-do-ultimo-olhar.png" alt="Capa do Capítulo No Silêncio do último Olhar">
+                    <span class="nome-conto">No Silêncio do último Olhar</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <img src="../../assets/img/others/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo-footer">
+            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank">Criado por AdemisKrt</a>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/global/alterar-tema.js"></script>
+    <script src="../../assets/js/personagens/menu-dropdown.js"></script>
+
+</body>
+</html>

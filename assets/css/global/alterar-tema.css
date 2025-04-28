@@ -1,0 +1,17 @@
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #8b4513;
+}
+
+body.dark-mode header {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode button#toggle-theme {
+    background-color: #1a1a1a;
+    color: #8b4513;
+}
+
+body.dark-mode button#toggle-theme:hover {
+    background-color: #2d2d2d;
+}

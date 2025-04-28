@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário da Natsumi</title>
-    
-    <!-- Fontes do Google para tema medieval -->
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
-    
-    <!-- Ícones para redes sociais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Ícones na Aba -->
-    <link rel="shortcut icon" href="../../../assets/images/favico.png" type="image/x-icon">
+    <title>No Silêncio do Último Olhar</title>
 
-    <link rel="stylesheet" href="../../../assets/css/style.css">
-    <link rel="stylesheet" href="../../../assets/css/menu.css">
+    <!-- Estilos globais e específicos -->
+    <link rel="shortcut icon" href="../../../assets/img/others/favico.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../assets/css/global/estilo-geral.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/rodape-diario.css">
+    <link rel="stylesheet" href="../../../assets/css/global/alterar-tema.css">
+    <link rel="stylesheet" href="../../../assets/css/personagens/menu-dropdown.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/pagina-diario.css">
+    <link rel="stylesheet" href="../../../assets/css/contos/botoes.css">
 </head>
+
 <body>
-    <!-- Botão de alternância de tema -->
-    <button id="themeToggle" aria-label="Alternar tema">
-        <i class="fas fa-moon"></i>
+    <!-- Botão de alternar tema -->
+    <button id="toggle-theme">
+        <span id="theme-icon">🌞</span>
     </button>
 
-
-
-
-    <!-- Cabeçalho -->
-    <header>
-        <nav>
-            <div class="menu-container">
-              <button class="menu-toggle" id="toggleBtn">☰</button>
-              <div class="menu-links" id="menuLinks">
-                <a href="../../../index.html">Home</a>
-                <a href="../natsumi.html">Natsumi</a>
-                <a href="#titulo">História</a>
-                <a href="#personagens-citados">Personagens Citados</a>
-              </div>
-            </div>
-          </nav>
-    </header>
+    <!-- Menu Dropdown -->
+    <nav class="navbar">
+        <ul class="menu">
+            <!-- Link Home -->
+            <li>
+                <a href="../../../index.html">
+                    <img src="../../../assets/img/menu/home-ico.png" alt="Ícone Home" class="icon"> Home
+                </a>
+            </li>
+    
+            <!-- Dropdown de Personagens -->
+            <li class="dropdown" id="menu-personagens">
+                <a href="javascript:void(0);">
+                    <img src="../../../assets/img/menu/personagens-ico.png" alt="Ícone Personagens" class="icon"> Personagens
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../natsumi.html">
+                            <img src="../../../assets/img/menu/natsumi-ico.png" alt="Ícone Natsumi" class="icon"> Natsumi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../../assets/img/menu/helldrin-ico.png" alt="Ícone Helldrin" class="icon"> Helldrin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../../assets/img/menu/myst-ico.png" alt="Ícone Mystogan" class="icon"> Mystogan
+                        </a>
+                    </li>
+                    <!-- Mais personagens facilmente adicionáveis aqui -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Seção principal do diário -->
     <main>
@@ -46,9 +65,6 @@
         <section class="page-section" id="entries">
             <h2 id="titulo" class="section">No Silêncio do Último Olhar</h2>
             <article class="entry">
-                <div class="entry-header">
-                    <span class="entry-date">Mundo Antigo</span>
-                </div>
                 <p class="entry-content">
                     Ela chegou em nossas vidas como uma brisa calma antes da tempestade. Ahri. 
                     Não esteve conosco por tanto tempo, mas foi o suficiente… para mudar tudo. 
@@ -75,12 +91,12 @@
             <!-- Mais entradas aqui -->
         </section>
 
-        <!-- Seção de notas -->
+        <!-- Citação de Personagens -->
         <section class="page-section" id="notes">
             <h2 id="personagens-citados" class="section">Personagens Citados</h2>
             <div class="notes-grid">
                 <div class="note-card">
-                    <img src="../../../assets/images/avatar-Taci.png" alt="Avatar Taci" class="avatar">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-taciane.png" alt="Avatar Taci" class="avatar">
                     <h4>Taci</h4>
                     <p>
                         Taci... eu gritei... VOCÊ OUVIU? <br>
@@ -93,7 +109,7 @@
                 </div>
                 <!-- Mais notas aqui -->
                 <div class="note-card">
-                    <img src="../../../assets/images/avatar-Marfim.jpg" alt="Avatar Marfim" class="avatar">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-sapinho.png" alt="Avatar Marfim" class="avatar">
                     <h4>Marfim</h4>
                     <p>
                         Marfim. <br>
@@ -106,7 +122,7 @@
                 </div>
                 <!-- Mais notas aqui -->
                 <div class="note-card">
-                    <img src="../../../assets/images/avatar-Kishi.jpg" alt="Avatar do Kishi" class="avatar">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-kishi.png" alt="Avatar do Kishi" class="avatar">
                     <h4>Kishimoshi</h4>
                     <p>
                         Família... é isso? <br>
@@ -119,8 +135,9 @@
                         deixasse eu ter morrido, porra!
                     </p>
                 </div>
+                <!-- Mais notas aqui -->
                 <div class="note-card">
-                    <img src="../../../assets/images/avatar-Nefilim.jpg" alt="Avatar Kishi" class="avatar">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-nefelim.jpg" alt="Avatar do Nefilim" class="avatar">
                     <h4>Nefilim</h4>
                     <p>
                         não esqueço teu rosto. <br>
@@ -136,7 +153,7 @@
                 </div>
                 <!-- Mais notas aqui -->
                 <div class="note-card">
-                    <img src="../../../assets/images/avatar-Ahri.jpg" alt="Avatar da Ahri" class="avatar">
+                    <img src="../../../assets/img/global/avatar-personagens/avatar-ahri.jpg" alt="Avatar da Ahri" class="avatar">
                     <h4>Ahri</h4>
                     <p>
                         Eu amava você. <br>
@@ -159,17 +176,30 @@
             </div>
         </section>
     </main>
+    
+    <!-- Botões de navegação laterais -->
+    <div class="botoes-navegacao">
+        <!-- Botão para a página anterior -->
+        <a href="1-renascida-sem-nome.html" class="botao-nav esquerda">
+            <img src="../../../assets/img/global/botoes/seta-esquerda.png" alt="Voltar">
+        </a>
+
+        <!-- Botão para a próxima página -->
+        <a href="#" class="botao-nav direita">
+            <img src="../../../assets/img/global/botoes/seta-direita.png" alt="Avançar">
+        </a>
+    </div>
 
     <!-- Rodapé -->
-    <footer class="page-section">
-        <div class="social-links">
-            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank"><i class="fab fa-github"></i></a>
-            <img src="../../../assets/images/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo">
+    <footer>
+        <div class="footer-content">
+            <img src="../../../assets/img/others/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo-footer">
+            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank">Criado por AdemisKrt</a>
         </div>
-        <p class="copyright"> Criado por Ademis</p>
     </footer>
 
-    <script src="../../../assets/js/script.js"></script>
-    <script src="../../../assets/js/menu.js"></script>
+    <!-- Scripts -->
+    <script src="../../../assets/js/global/alterar-tema.js"></script>
+    <script src="../../../assets/js/personagens/menu-dropdown.js"></script>
 </body>
 </html>

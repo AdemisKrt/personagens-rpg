@@ -1,0 +1,38 @@
+/* Área que contém os botões */
+.botoes-navegacao {
+    position: relative; /* Para que os botões sejam posicionados dentro dessa área */
+    width: 100%; /* Ocupa toda a largura */
+    height: 100px; /* Altura da área (pode ajustar se quiser) */
+    display: flex; /* Flexbox para organizar os botões */
+    justify-content: space-between; /* Um botão na esquerda, outro na direita */
+    align-items: center; /* Centraliza os botões verticalmente */
+    padding: 0 20px; /* Espaço interno nas laterais */
+    box-sizing: border-box; /* Inclui o padding no cálculo de largura */
+}
+
+/* Estilo geral dos botões */
+.botao-nav img {
+    width: 50px; /* Tamanho padrão das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: transform 0.3s ease; /* Animação suave no hover */
+}
+
+/* Efeito ao passar o mouse */
+.botao-nav img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Estilo específico para o botão da esquerda */
+.botao-nav.esquerda {
+    justify-self: flex-start; /* Garante que fique à esquerda */
+}
+
+/* Estilo específico para o botão da direita */
+.botao-nav.direita {
+    justify-self: flex-end; /* Garante que fique à direita */
+}
+
+/* Responsividade automática:
+   As imagens vão diminuir se a tela ficar muito pequena
+   porque usamos medidas proporcionais e flexbox */

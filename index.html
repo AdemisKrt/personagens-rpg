@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diário de Personagens</title>
-    
-    <!-- Fontes do Google para tema medieval -->
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
-    
-    <!-- Ícones para redes sociais -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Ícones na Aba -->
-    <link rel="shortcut icon" href="assets/images/favico.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Seleção de Personagem</title>
+
+    <link rel="shortcut icon" href="assets/img/others/favico.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/global/estilo-geral.css">
+    <link rel="stylesheet" href="assets/css/global/alterar-tema.css">
+    <link rel="stylesheet" href="assets/css/global/selecao-de-personagens.css">
+    <link rel="stylesheet" href="assets/css/global/rodape.css">
 </head>
-<body>
-    <!-- Botão de alternância de tema -->
-    <button id="themeToggle" aria-label="Alternar tema">
-        <i class="fas fa-moon"></i>
-    </button>
+<body class="light-mode">
 
-        <!-- Seleção de Personagens de notas -->
-        <section class="page-section" id="notes">
-            <h2>Diário de Personagens</h2>
-            <div class="notes-grid">
-                <div class="note-card">
-                    <a href="player/natsumi/natsumi.html">
-                        <img src="assets/images/avatar-Natsumi.png" alt="Avatar Natsumi" class="avatar">
-                    </a>
-                    <h4>Natsumi</h4>
-                </div>
-                <!-- Mais notas aqui -->
+    <header>
+        <h1>Escolha um Diário</h1>
+        <button id="toggle-theme">
+            <span id="theme-icon">🌞</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="selecao-personagens">
+            <div class="personagem">
+                <a href="pages/natsumi/natsumi.html">
+                    <img src="assets/img/global/avatar-personagens/avatar-natsumi.png" alt="Foto da Natsumi">
+                    <span class="nome-personagem">Natsumi</span>
+                </a>
+            </div>
+
+            <div class="personagem">
+                <a href="#">
+                    <img src="assets/img/global/avatar-personagens/avatar-helldrin.png" alt="Foto do Helldrin">
+                    <span class="nome-personagem">Helldrin</span>
+                </a>
+            </div>
+
+            <div class="personagem">
+                <a href="#">
+                    <img src="assets/img/global/avatar-personagens/avatar-mystogan.jpg" alt="Foto do Helldrin">
+                    <span class="nome-personagem">Mystogan</span>
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="page-section">
-        <div class="social-links">
-            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank"><i class="fab fa-github"></i></a>
-            <img src="assets/images/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo">
+    <footer>
+        <div class="footer-content">
+            <img src="assets/img/others/kiraitami-logo.png" alt="Logo da Kiraitami" class="logo-footer">
+            <a href="https://github.com/AdemisKrt/personagens-rpg" target="_blank">Criado por AdemisKrt</a>
         </div>
-        <p class="copyright"> Criado por Ademis</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/global/alterar-tema.js"></script>
+
 </body>
 </html>

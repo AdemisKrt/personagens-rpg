@@ -1,0 +1,36 @@
+footer {
+    background-color: #d6c7a8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 75px;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .footer-content a {
+    color: #8b4513;
+}

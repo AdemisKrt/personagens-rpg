@@ -1,0 +1,112 @@
+/* Estilo do Navbar */
+.navbar {
+    background-color: #d6c7a8;
+    padding: 10px 20px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+/* Remove marcadores das listas */
+.menu, .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens do menu */
+.menu li {
+    position: relative;
+}
+
+/* Links dos itens */
+.menu a {
+    text-decoration: none;
+    color: #3d2c1d;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Ícones */
+.menu .icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Submenu inicialmente escondido */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d6c7a8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    min-width: 200px;
+    z-index: 10;
+}
+
+/* Itens do submenu */
+.submenu li {
+    padding: 10px;
+}
+
+/* Links do submenu */
+.submenu a {
+    color: #3d2c1d;
+}
+
+/* Mostrar submenu ao clicar */
+.dropdown.active .submenu {
+    display: block;
+}
+
+/* Um efeito de hover no modo light */
+.submenu a:hover {
+    background-color: #3d2c1d7e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .submenu {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+/* Estilos do Menu no Modo Dark */
+body.dark-mode .navbar {
+    background-color: #2d2d2d;
+}
+
+body.dark-mode .menu a {
+    color: #8b4513;
+}
+
+body.dark-mode .submenu {
+    background-color: #333;
+}
+
+body.dark-mode .submenu a {
+    color: #8b4513;
+}
+
+/* Um efeito de hover no modo dark */
+body.dark-mode .submenu a:hover {
+    background-color: #2d2d2d;
+}
